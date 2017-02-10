@@ -5,7 +5,6 @@ import React, {Component} from 'react'
 export default class ShowOrHide extends Component {
     constructor(props) {
       super(props);
-      console.log(props);
       this.state = {
          msg: 'What do you want for me!!'
       }

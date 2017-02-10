@@ -1,14 +1,17 @@
 import React, {Component} from 'react'
-
+import {getDisplayName} from '../util/index.js'
 
 /**
  *  Props Poxy
  */
 //
 const addProps = (args) => EnhanceCom => class AddCom extends Component {
+    static displayName = `HOC(${getDisplayName(EnhanceCom)})`
+
     constructor(props) {
       super();
     }
+
     render() {
       const newProps = {
         doing: 'now add props'

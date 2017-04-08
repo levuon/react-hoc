@@ -3,6 +3,7 @@ var WebpackDevServer = require('webpack-dev-server');
 var webpackConfig = require('./webpack.config');
 var compiler = webpack(webpackConfig);
 var cpexec = require('child_process').exec;
+// var spawn = require('child_process').spawn;
 
 var host = "localhost"
 var port = 3000;
@@ -13,7 +14,7 @@ new WebpackDevServer(compiler,webpackConfig.devServer)
         if (err) {
             console.log(err);
         } else {
-            console.info('==> 🚧  Webpack development server listening on port %s: %s', host,port);
+            console.info('Webpack development server listening on port %s: %s', host, port);
         }
     });
 

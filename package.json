@@ -26,7 +26,6 @@
     "babel-preset-stage-0": "^6.3.13",
     "babel-register": "^6.3.13",
     "babel-runtime": "^6.3.19",
-    "": "^1.11.0",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0"
   }

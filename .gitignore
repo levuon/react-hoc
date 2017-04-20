@@ -4,3 +4,4 @@ npm-debug*
 *.iml
 .idea/*
 .idea/workspace.xml
+.DS_Store

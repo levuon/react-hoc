@@ -4,6 +4,6 @@ import {
   modifyChildrenTree
 } from '../hoc-ii.js'
 
-const ModifyChildrenTree = modifyChildrenTree()(ShowOrHide);
+const ModifyChildrenTree = modifyChildrenTree()( ShowOrHide );
 
 export default ModifyChildrenTree

@@ -6,6 +6,6 @@ import Container from './container/Container.js'
 
 
 render(
-    <Container />,
-    document.getElementById('root')
+ <Container />,
+ document.getElementById( 'root' )
 );

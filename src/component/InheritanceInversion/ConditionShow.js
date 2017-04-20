@@ -4,5 +4,5 @@ import {
   conditionShow
 } from '../hoc-ii.js'
 
-const ConditionShow = conditionShow()(ShowOrHide);
+const ConditionShow = conditionShow()( ShowOrHide );
 export default ConditionShow;

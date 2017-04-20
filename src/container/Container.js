@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import AddProps from '../component/PropsPoxy/AddProps.js'
 import MinusProps from '../component/PropsPoxy/MinusProps.js'
 import AccessInstance from '../component/PropsPoxy/AccessInstance.js'
@@ -14,34 +14,31 @@ import ManipulateStateAndProps from '../component/InheritanceInversion/Manipulat
 
 export default class Container extends Component {
 
-   render() {
-
-
-
-     return (
+  render () {
+    return (
+     <div>
        <div>
-          <div>
-            <h1>Props Poxy</h1>
-            <AddProps  who = {'beauty'} />
-            <MinusProps who = {'beauty'} />
-            <AccessInstance></AccessInstance>
-            <StateAbstract />
-            <WrapComponent></WrapComponent>
-          </div>
-          <div style = {{paddingTop: '30px'}}>
-              <h1>Inheritance Inversion</h1>
-              <ShowCom saySomething={false}></ShowCom>
-              <span>
-                  <ConditionShow show={true}/>
-              </span>
-              <span>
-                  <ConditionShow show={false}/>
-              </span>
-              <ModifyChildrenTree />
-              <ManipulateStateAndProps></ManipulateStateAndProps>
-          </div>
+         <h1>Props Poxy</h1>
+         <AddProps who = {'beauty'} />
+         <MinusProps who = {'beauty'} />
+         <AccessInstance></AccessInstance>
+         <StateAbstract />
+         <WrapComponent></WrapComponent>
        </div>
+       <div style = {{ paddingTop: '30px' }} >
+         <h1>Inheritance Inversion</h1>
+         <ShowCom saySomething = {false} ></ShowCom>
+         <span>
+                  <ConditionShow show = {true} />
+              </span>
+         <span>
+                  <ConditionShow show = {false} />
+              </span>
+         <ModifyChildrenTree />
+         <ManipulateStateAndProps></ManipulateStateAndProps>
+       </div>
+     </div>
 
-     )
-   }
+    )
+  }
 }

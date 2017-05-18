@@ -14,25 +14,28 @@ let config = {
         publicPath: '/'
     },
     module: {
-      loaders: [
-        {
-          test: /\.js$/,
-          loader: 'babel-loader',
-          exclude: /node_modules/,
-          include: path.join(__dirname, '.', 'src')
-        }
-      ]
+        loaders: [
+            {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/,
+                include: path.join(__dirname, '.', 'src')
+            }, {
+                test: /\.scss/,
+                loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded'
+            }
+        ]
     },
     devServer: {
-          host: 'localhost',
-          historyApiFallback: true,
-          hot: true,
-          noInfo: false,
-          publicPath: '/',
-          stats: {
-              cached: false,
-              colors: true
-          }
+        host: 'localhost',
+        historyApiFallback: true,
+        hot: true,
+        noInfo: false,
+        publicPath: '/',
+        stats: {
+            cached: false,
+            colors: true
+        }
     }
 }
 

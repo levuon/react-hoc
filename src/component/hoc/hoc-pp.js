@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { getDisplayName } from '../util/index.js'
+import { getDisplayName } from '../../util/index.js'
 
 /**
  *  Props Poxy
@@ -52,7 +52,7 @@ const accessInstance = args => EnhanceCom => class AccessInstanceComponent exten
 
   process ( EnhanceComInstance ) {
     // 可以获取封装组件的实例，并能调用里面的方法
-    EnhanceComInstance.show();
+    // EnhanceComInstance.show();
   }
 
   render () {

@@ -5,3 +5,4 @@ npm-debug*
 .idea/*
 .idea/workspace.xml
 .DS_Store
+.vscode

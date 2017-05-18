@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import MutilHocRecompose from './MutilHocRecompose'
 import './app.scss'
 
 
@@ -12,12 +13,13 @@ const User = ({ name }) =>
 const alwaysLev = hoc({ name: 'lev' })
 const Users = alwaysLev(User);
 
-export default class App extends Component {
+export default class HocFromScratch extends Component {
   render() {
     return (
       <div>
         <User name='Tim'></User>
         <Users name='Tod'></Users>
+        <MutilHocRecompose name='lev' status='active'></MutilHocRecompose>
       </div>
     )
   }

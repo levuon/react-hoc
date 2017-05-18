@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import NavLink from '../component/NavLink.js'
 
-export default class Link extends Component {
+export default class Container extends Component {
 
   render () {
     const links = [
       { pathName: 'pp', name: '属性代理'},
       { pathName: 'ii', name: '继承反转'},
+      { pathName: 'fromScratch', name: '从头做起'},
     ]
 
     return (
@@ -20,8 +21,6 @@ export default class Link extends Component {
            </div>
          )}
          {this.props.children}
-
-
      </div>
     )
   }

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import MutilHocRecompose from './MutilHocRecompose'
+import AddStateTOFunction from './AddStateTOFunction'
 import './app.scss'
 
 
@@ -19,7 +20,8 @@ export default class HocFromScratch extends Component {
       <div>
         <User name='Tim'></User>
         <Users name='Tod'></Users>
-        <MutilHocRecompose name='lev' status='active'></MutilHocRecompose>
+        <MutilHocRecompose name='lev' status='active' />
+        <AddStateTOFunction name='lev' status='active' />
       </div>
     )
   }

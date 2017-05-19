@@ -6,7 +6,7 @@ import './app.scss'
 const { connect } = Redux();
 
 const enhance = compose(
-  setDisplayName('User'),
+  setDisplayName('MultiHocRecompose'),
   setPropTypes({
     name: React.PropTypes.string.isRequired,
     status: React.PropTypes.string
@@ -14,11 +14,15 @@ const enhance = compose(
   connect()
 )
 
-const MultiHocRecompose = enhance(({ name, status }) =>
-   <div className='user'>
+const MultiHocRecompose = enhance(({ name, status, dispatch }) =>
+   <div className='user' onClick= {
+       () => dispatch({type: "USER_SELECTED"})
+     }>
       { name }: { status }
    </div>
 )
+
+console.log(MultiHocRecompose.displayName);
 
 function Redux() {
   return {

@@ -9,11 +9,11 @@ const fromScratch = (
                 callback(null, require('../containers/Hoc/HocFromScratch').default)
           }, 'scratch')
       }}/>
-
-    {/* <Route path="/multiHoc" getComponent={(nextState, callback) => {
+{/* 
+    <Route path="/state2Fun" getComponent={(nextState, callback) => {
           require.ensure([], require => {
-              callback(null, require('../containers/Hoc/MutilHocRecompose').default)
-          }, 'multiHoc')
+              callback(null, require('../containers/Hoc/AddStateTOFunction').default)
+          }, 'state2Fun')
       }}/> */}
   </Router>
 );

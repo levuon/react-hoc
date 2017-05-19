@@ -7,7 +7,7 @@ export default class Container extends Component {
     const links = [
       { pathName: 'pp', name: '属性代理'},
       { pathName: 'ii', name: '继承反转'},
-      { pathName: 'fromScratch', name: '从头做起'},
+      { pathName: 'fromScratch', name: 'mutil-hoc'},
     ]
 
     return (

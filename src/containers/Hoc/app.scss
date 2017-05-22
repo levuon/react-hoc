@@ -7,14 +7,14 @@
 }
 
 .Tooltip {
-  position: relative;
-  text-align: center;
-  top: -15px;
-  left: 10px;
-  background: gray;
-  width: 80px;
-  height: 30px;
-  line-height: 30px;
+    position: relative;
+    text-align: center;
+    top: -15px;
+    left: 10px;
+    background: gray;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
 }
 
 .StatusList {
@@ -24,27 +24,11 @@
     margin: 0 0 0 10px;
 }
 
-$green-px: 10px;
-$red-px: 20px;
-$black-px: 30px;
-$orange-px: 40px;
-
-$green: green;
-$red: red;
-$black: black;
-$orange: orange;
-
-
-
-$test: (green, $green-px, $green ),
-       (red, $red-px, $red),
-       (black, $black-px, $black),
-       (orange, $orange-px, $orange);
-
-
-@each $icon, $px, $color in $test {
-  .color-px-#{$icon} {
-      width: $px;
-      background-color: $color
-  }
+.hook-user {
+    width: 150px;
+    height: 50px;
+    background-color: skyblue;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
 }

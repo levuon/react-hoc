@@ -2,13 +2,14 @@ import React, {Component} from 'react'
 import {compose, withState, withReducer, withHandlers} from 'recompose'
 import './app.scss'
 
+
 const withToggle = compose(
   withState('toggleOn', 'toggle', false),
   withState('number', 'add', 0),
   withHandlers({
-    show: ({toggle}) => (e) => (toggle(true), console.log('show')),
+    show: ({toggle}) => (e) => (toggle(true), debugAddState('withToggle: true')),
     hide: ({toggle}) => (e) => toggle(false),
-    toggle: ({toggle}) => (e) => toggle(current => !current)
+    toggle: ({toggle}) => (e) => toggle(current => (debugAddState('withToggle: %s', current), !current))
 }));
 
 const withToggleReducer = compose(

@@ -18,8 +18,8 @@ export default class HocFromScratch extends Component {
                 {/* <User name='Tim'></User> */}
                 {/* <Users name='Tod'></Users> */}
                 {/* <MutilHocRecompose name='lev' status='active' /> */}
-                {/* <AddStateTOFunction name='lev' status='active' /> */}
-                <LifeCycleHook name='Tim' status='active'/>
+                <AddStateTOFunction name='lev' status='active' />
+                {/* <LifeCycleHook name='Tim' status='active'/> */}
             </div>
         )
     }

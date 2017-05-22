@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server.js"
+    "start": "DEBUG=add:state node ./server.js"
   },
   "keywords": [],
   "author": "lev",
@@ -31,7 +31,9 @@
     "babel-register": "^6.3.13",
     "babel-runtime": "^6.3.19",
     "css-loader": "^0.28.0",
+    "debug": "^2.6.8",
     "node-sass": "^4.5.3",
+    "pino": "^4.5.2",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
     "webpack": "^2.2.1",

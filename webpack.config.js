@@ -26,6 +26,9 @@ let config = {
             }
         ]
     },
+    resolve: {
+
+    },
     devServer: {
         host: 'localhost',
         historyApiFallback: true,

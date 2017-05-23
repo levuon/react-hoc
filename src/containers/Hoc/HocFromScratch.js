@@ -3,6 +3,9 @@ import MutilHocRecompose from './MutilHocRecompose'
 import AddStateTOFunction from './AddStateTOFunction'
 import LifeCycleHook from './LifeCycleHook'
 import TransformProps from './TransformProps'
+import LockProps from './LockProps'
+import FlattenProps from './FlattenProps'
+import LoadingComponentSpinner from './LoadingComponentSpinner'
 import './app.scss'
 
 const hoc = (overrideProps) => (BaseComponent) => props => <BaseComponent {...props} {...overrideProps}/>
@@ -21,7 +24,10 @@ export default class HocFromScratch extends Component {
                 {/* <MutilHocRecompose name='lev' status='active' /> */}
                 {/* <AddStateTOFunction name='lev' status='active' /> */}
                 {/* <LifeCycleHook name='Tim' status='active'/> */}
-                <TransformProps></TransformProps>
+                {/* <TransformProps></TransformProps> */}
+                {/* <LockProps></LockProps> */}
+                {/* <FlattenProps></FlattenProps> */}
+                <LoadingComponentSpinner />
             </div>
         )
     }

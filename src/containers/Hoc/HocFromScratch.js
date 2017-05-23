@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import MutilHocRecompose from './MutilHocRecompose'
 import AddStateTOFunction from './AddStateTOFunction'
 import LifeCycleHook from './LifeCycleHook'
+import TransformProps from './TransformProps'
 import './app.scss'
 
 const hoc = (overrideProps) => (BaseComponent) => props => <BaseComponent {...props} {...overrideProps}/>
@@ -18,8 +19,9 @@ export default class HocFromScratch extends Component {
                 {/* <User name='Tim'></User> */}
                 {/* <Users name='Tod'></Users> */}
                 {/* <MutilHocRecompose name='lev' status='active' /> */}
-                <AddStateTOFunction name='lev' status='active' />
+                {/* <AddStateTOFunction name='lev' status='active' /> */}
                 {/* <LifeCycleHook name='Tim' status='active'/> */}
+                <TransformProps></TransformProps>
             </div>
         )
     }

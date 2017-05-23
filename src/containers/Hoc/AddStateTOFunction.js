@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {compose, withState, withReducer, withHandlers} from 'recompose'
+import debug from 'debug';
 import './app.scss'
 
 

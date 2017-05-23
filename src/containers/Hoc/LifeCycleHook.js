@@ -33,11 +33,7 @@ const config = {
 }
 
 function fetchConfiguration() {
-  return new Promise(function(resolve) {
-    setTimeout(function() {
-      resolve(config)
-    }, 300);
-  });
+  return new Promise((resolve) => setTimeout(() => resolve(config), 300));
 }
 
 

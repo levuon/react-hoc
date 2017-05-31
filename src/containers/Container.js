@@ -8,6 +8,7 @@ export default class Container extends Component {
       { pathName: 'pp', name: '属性代理'},
       { pathName: 'ii', name: '继承反转'},
       { pathName: 'fromScratch', name: 'mutil-hoc'},
+      { pathName: 'sayHi', name: 'say hi'}
     ]
 
     return (
